@@ -19,6 +19,19 @@ Page({
         isHighlyRecommended: false
       }
     ],
-    count:123
+    count:123,
+
+  },  
+
+  onLoad:function(options){
+    this.setData({
+      currentpage: this.data.weeklymovielist.length-1
+    })
+  },
+
+  f0:function(event){
+    this.setData({
+      currentpage: this.data.weeklymovielist.length - 1
+    })
   }
 })
