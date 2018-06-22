@@ -1,0 +1,16 @@
+<view>
+  <swiper class='movie-swiper' indicator-dots='{{true}}'>
+    <swiper-item class='movie' wx:for="{{weeklymovielist}}">
+      <view class='container moviecard'>
+
+        <image class='movie-image' src='{{item.imagepath}}'></image>
+      
+          <text>{{item.name}}</text>
+          <text>点评：{{item.comment}}</text>
+          <text wx:if="{{item.isHighlyRecommended}}" style='font-size:16px;color:red;'>强烈推荐</text>
+        
+
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
